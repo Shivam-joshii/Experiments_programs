@@ -19,7 +19,7 @@ int main() {
     struct Book b1;
     printf("Enter book id, title, author, price:\n");
     scanf("%d", &b1.book_id);
-    getchar(); // To consume newline after int input
+    getchar(); 
     fgets(b1.title, 50, stdin);
     fgets(b1.author, 50, stdin);
     scanf("%f", &b1.price);
