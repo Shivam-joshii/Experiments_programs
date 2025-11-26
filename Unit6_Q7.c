@@ -13,7 +13,7 @@ union Address {
 
 int main() {
     union Address addr;
-    strcpy(addr.name, "Rahul"); // Example present address (fill as needed)
+    strcpy(addr.name, "Rahul"); 
     printf("Present address (name): %s\n", addr.name);
     strcpy(addr.home_address, "123 Street, Home City");
     printf("Present address (home): %s\n", addr.home_address);
@@ -25,7 +25,5 @@ int main() {
     printf("State: %s\n", addr.state);
     strcpy(addr.zip, "248001");
     printf("ZIP: %s\n", addr.zip);
-
-    // Note: Only last assigned member is available; union overwrites memory.
     return 0;
 }
